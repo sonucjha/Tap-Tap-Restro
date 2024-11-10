@@ -1,29 +1,18 @@
 <template>
-  <div class="admin-dashboard">
-    <!-- header start -->
-    <Header />
-    <!-- header end -->
-
-    <div class="main-container">
-      <!-- sidebar start -->
-      <sidebar></sidebar>
-      <!-- sidebar end -->
-
-      <main class="content">
-        <router-view />
+  <div>
+      <Header />
+      <Sidebar />
+      <main class="ml-64 p-6">
+          <h2 class="text-2xl font-bold mb-4">Welcome to the Dashboard!</h2>
+          <p>Content goes here...</p>
+          <router-view />
       </main>
-    </div>
-
-    <!-- footer start -->
-    <footer></footer>
-    <!-- footer end -->
+      <Footer />
   </div>
 </template>
 
 <script setup>
-import Sidebar from '../sidebar.vue';
-import Header from '../header.vue';
-import Footer from '../footer.vue';
+import Sidebar from './sidebar.vue';
+import Header from './header.vue';
+import Footer from './footer.vue';
 </script>
-
- 

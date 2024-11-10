@@ -3,6 +3,6 @@
 </template>
 
 <script setup>
-import { AdminLayout } from "../../views/admin/adminLayout.vue";
+import AdminLayout  from "./../../views/admin/adminLayout.vue";
 
 </script>

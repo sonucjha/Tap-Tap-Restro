@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import { Header } from "../../views/admin/header.vue";
+import { Header } from "./../../views/admin/header.vue";
 </script>

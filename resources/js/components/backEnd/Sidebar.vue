@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
- import { SideBar } from "../../views/admin/sidebar.vue";
+ import { SideBar } from "./../../views/admin/sidebar.vue";
 </script>

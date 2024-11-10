@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import { Footer } from "../../views/admin/footer.vue";
+import { Footer } from "./../../views/admin/footer.vue";
 </script>
