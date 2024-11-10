@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel + Vite + Vue</title>
+    <title>TAP TAP</title>
+    <!-- Link to the custom CSS file -->
+    <link rel="stylesheet" href="{{ asset('backEnd/adminLayout.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/sidebar.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
