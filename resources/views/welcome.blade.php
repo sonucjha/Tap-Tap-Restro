@@ -18,5 +18,7 @@
         <!-- <app-component></app-component> -->
         <admin-layout></admin-layout>
     </div>
+    <script src="{{ asset('backEnd/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('backEnd/js/sidebars.js') }}"></script>
 </body>
 </html>
