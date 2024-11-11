@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAP TAP</title>
     <!-- Link to the custom CSS file -->
-    <link rel="stylesheet" href="{{ asset('backEnd/adminLayout.css') }}">
-    <link rel="stylesheet" href="{{ asset('backEnd/common.css') }}">
-    <link rel="stylesheet" href="{{ asset('backEnd/footer.css') }}">
-    <link rel="stylesheet" href="{{ asset('backEnd/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('backEnd/sidebar.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/css/adminLayout.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/css/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/css/sidebar.css') }}">
+    <link rel="stylesheet" href="{{ asset('backEnd/css/dashboardCard.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
