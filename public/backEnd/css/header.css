@@ -2,4 +2,5 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background: linear-gradient(to right, #6d0f4d, #4e4e4eba) !important;
   }
