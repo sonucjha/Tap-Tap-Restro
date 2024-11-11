@@ -1,13 +1,16 @@
 <template>
   <div>
-      <Header />
+    <Header />
+    <div class="d-flex bg-light">
       <Sidebar />
       <main class="ml-64 p-6">
-          <h2 class="text-2xl font-bold mb-4">Welcome to the Dashboard!</h2>
-          <p>Content goes here...</p>
-          <router-view />
+        <h2 class="text-2xl font-bold mb-4">Welcome to the Dashboard!</h2>
+        <p>Content goes here...</p>
+        <router-view />
       </main>
-      <Footer />
+    </div>
+
+    <Footer />
   </div>
 </template>
 
