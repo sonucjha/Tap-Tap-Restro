@@ -6,16 +6,11 @@ import Footer from './views/admin/footer.vue';
 import SideBar from './views/admin/sidebar.vue';
 
 const routes = [
-  {
-    path: '/',
-    component: AdminLayout,
-    children: [
-      { path: 'dashboard', component: Dashboard },
-      { path: 'header', component: Header },
-      { path: 'footer', component: Footer },
-      { path: 'sidebar', component: SideBar },
-    ],
-  },
+  { path: '/', component: AdminLayout },
+  { path: '/admin-layout', component: AdminLayout },
+  { path: '/dashboard', component: Dashboard },
+  { path: '/header', component: Header },
+  { path: '/footer', component: Footer },
 ];
 
 const router = createRouter({

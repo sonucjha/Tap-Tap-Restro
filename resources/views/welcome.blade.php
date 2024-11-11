@@ -15,7 +15,7 @@
 <body>
     <div id="app">
         <!-- <app-component></app-component> -->
-        <admin-dashboard></admin-dashboard>
+        <admin-layout></admin-layout>
     </div>
 </body>
 </html>
