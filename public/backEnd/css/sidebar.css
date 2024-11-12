@@ -2,3 +2,6 @@ aside {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.custom-sidebar{
+    background: linear-gradient(to right, #6d0f4d, #4e4e4eba) !important;
+}
