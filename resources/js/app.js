@@ -8,10 +8,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { createApp } from 'vue';
 import router from './router';
 
-// import AdminLayout from './components/backEnd/adminLayout.vue';
+import AdminLayout from './components/backEnd/adminLayout.vue';
 import App from './components/App.vue';
 
-import AdminLayout from './views/admin/test.vue';
+// import AdminLayout from './views/admin/test.vue';
 
 const app = createApp({});
 app.component('app-component', App);

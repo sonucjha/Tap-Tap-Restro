@@ -1,21 +1,45 @@
 <template>
-  <div>
+  <div id="app" class="app-container">
     <Header />
-    <div class="d-flex bg-light">
+    <div class="main-content">
       <Sidebar />
-      <main class="ml-12 p-6 col-9">
-        <h2 class="text-2xl font-bold mb-4">Welcome to the Dashboard!</h2>
-        <p>Content goes here...</p>
+      <div class="content">
         <router-view />
-      </main>
+      </div>
     </div>
-
     <Footer />
   </div>
 </template>
 
-<script setup>
-import Sidebar from './sidebar.vue';
-import Header from './header.vue';
-import Footer from './footer.vue';
+<script>
+import Sidebar from "./sidebar.vue";
+import Header from "./header.vue";
+import Footer from "./footer.vue";
+
+export default {
+  components: {
+    Sidebar,
+    Header,
+    Footer,
+  },
+};
 </script>
+
+<style>
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+</style>
