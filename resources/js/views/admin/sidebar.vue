@@ -84,36 +84,3 @@
   };
   </script>
   
-  <style>
-  .sidebar {
-    width: 250px;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu > li {
-    margin: 10px 0;
-  }
-  
-  .icon {
-    margin-right: 10px;
-  }
-  
-  .dropdown-toggle {
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    list-style: none;
-    padding-left: 20px;
-    margin: 5px 0;
-  }
-  </style>
-  
