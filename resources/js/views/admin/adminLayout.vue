@@ -11,16 +11,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
+
 import Sidebar from "./sidebar.vue";
 import Header from "./header.vue";
 import Footer from "./footer.vue";
 
-export default {
-  components: {
-    Sidebar,
-    Header,
-    Footer,
-  },
+const toggleDropdown = (menu) => {
+  dropdowns[menu] = !dropdowns[menu];
 };
 </script>
