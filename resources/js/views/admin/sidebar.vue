@@ -65,7 +65,7 @@
 <script setup>
 import { ref } from "vue";
 
-const staff = ref(true)
+const staff = ref(false)
 const menuManagement = ref(false)
 const kiranaItem = ref(false)
 const order = ref(false)
@@ -78,3 +78,12 @@ const toggleDropdown = (menu) => {
 };
 
 </script>
+
+<!-- const dropdownStates = ref({
+  staff: false,
+  menuManagement: false,
+  kiranaItem: false,
+  order: false,
+  photo: false,
+  video: false,
+}); -->
