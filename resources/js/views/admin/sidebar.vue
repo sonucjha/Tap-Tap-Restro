@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar" style="width: 280px;">
     <div class=" brand-backgound">
-        <h4 class="mb-1" style="color:white">Tap-Tap-Restro</h4>
-      </div>
+      <h4 class="mb-1" style="color:white">Tap-Tap-Restro</h4>
+    </div>
 
     <ul class="nav nav-pills flex-column mb-auto">
       <li>
@@ -12,7 +12,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" @click.prevent="toggleDropdown('staff')">
+        <a href="#" class="nav-link text-white" @click.prevent="handleToggle('staff')">
           <i class="bi bi-people-fill me-2"></i>
           Staff
           <i :class="dropdowns.staff ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" class="float-end"></i>
@@ -25,11 +25,11 @@
       <li>
         <a href="#" class="nav-link text-white">
           <i class="bi bi-people me-2"></i>
-          Customer 
+          Customer
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" @click.prevent="toggleDropdown('menuManagement')">
+        <a href="#" class="nav-link text-white" @click.prevent="handleToggle('menuManagement')">
           <i class="bi bi-list-ul me-2"></i>
           Menu Management
           <i :class="dropdowns.menuManagement ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" class="float-end"></i>
@@ -40,7 +40,7 @@
         </ul>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" @click.prevent="toggleDropdown('kiranaItem')">
+        <a href="#" class="nav-link text-white" @click.prevent="handleToggle('kiranaItem')">
           <i class="bi bi-box-seam me-2"></i>
           Kirana Item
           <i :class="dropdowns.kiranaItem ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" class="float-end"></i>
@@ -51,7 +51,7 @@
         </ul>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" @click.prevent="toggleDropdown('order')">
+        <a href="#" class="nav-link text-white" @click.prevent="handleToggle('order')">
           <i class="bi bi-cart-fill me-2"></i>
           Orders
           <i :class="dropdowns.order ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" class="float-end"></i>
@@ -68,7 +68,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" @click.prevent="toggleDropdown('photo')">
+        <a href="#" class="nav-link text-white" @click.prevent="handleToggle('photo')">
           <i class="bi bi-image me-2"></i>
           Photo
           <i :class="dropdowns.photo ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" class="float-end"></i>
@@ -79,7 +79,7 @@
         </ul>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" @click.prevent="toggleDropdown('video')">
+        <a href="#" class="nav-link text-white" @click.prevent="handleToggle('video')">
           <i class="bi bi-camera-video-fill me-2"></i>
           Video
           <i :class="dropdowns.video ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" class="float-end"></i>
@@ -92,7 +92,8 @@
     </ul>
     <hr>
     <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
+        data-bs-toggle="dropdown" aria-expanded="false">
         <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
         <strong>mdo</strong>
       </a>
@@ -100,7 +101,9 @@
         <li><a class="dropdown-item" href="#">New project...</a></li>
         <li><a class="dropdown-item" href="#">Settings</a></li>
         <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
         <li><a class="dropdown-item" href="#">Sign out</a></li>
       </ul>
     </div>
@@ -108,18 +111,22 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { defineProps, defineEmits } from "vue";
 
-const dropdowns = ref({
-  staff: false,
-  menuManagement: false,
-  kiranaItem: false,
-  order: false,
-  photo: false,
-  video: false,
+// Declare props
+const props = defineProps({
+  dropdowns: {
+    type: Object,
+    required: true,
+  },
 });
 
-const toggleDropdown = (menu) => {
-  dropdowns.value[menu] = !dropdowns.value[menu];
+// Declare emit
+// const emit = defineEmits(["update:dropdowns"]);
+const emit = defineEmits(["update-dropdown"]);
+
+const handleToggle = (menu) => {
+  emit("update-dropdown", menu);
 };
+
 </script>
