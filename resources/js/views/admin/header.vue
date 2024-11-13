@@ -1,11 +1,11 @@
 <template>
     <header class="header">
-      <div class="logo">My App</div>
+      <div class="logo"></div>
       <div class="settings-dropdown">
-        <div @click="toggleDropdown" class="settings-toggle">
+        <div @click="toggleDropdown" class="settings-toggle pointer">
           ⚙️ Settings
         </div>
-        <ul v-show="showDropdown" class="dropdown-menu">
+        <ul v-if="showDropdown" class="dropdown-menus">
           <li>Profile</li>
           <li>Logout</li>
         </ul>
