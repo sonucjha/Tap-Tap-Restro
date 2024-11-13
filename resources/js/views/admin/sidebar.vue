@@ -6,7 +6,7 @@
         <div @click="toggleDropdown('staff')" class="dropdown-toggle">
           <i class="icon">👨‍💼</i> Staff
         </div>
-        <ul v-if="dropdowns.staff" class="dropdown-menu">
+        <ul v-if="dropdowns.staff" class="dropdown-menus">
           <li>Staff List</li>
           <li>Roles</li>
         </ul>
@@ -16,7 +16,7 @@
         <div @click="toggleDropdown('menuManagement')" class="dropdown-toggle">
           <i class="icon">📋</i> Menu Management
         </div>
-        <ul v-if="dropdowns.menuManagement" class="dropdown-menu">
+        <ul v-if="dropdowns.menuManagement" class="dropdown-menus">
           <li>View Menus</li>
           <li>Add Menu</li>
         </ul>
@@ -25,7 +25,7 @@
         <div @click="toggleDropdown('kiranaItem')" class="dropdown-toggle">
           <i class="icon">🍎</i> Kirana Item
         </div>
-        <ul v-if="dropdowns.kiranaItem" class="dropdown-menu">
+        <ul v-if="dropdowns.kiranaItem" class="dropdown-menus">
           <li>Items List</li>
           <li>Add Item</li>
         </ul>
@@ -34,7 +34,7 @@
         <div @click="toggleDropdown('order')" class="dropdown-toggle">
           <i class="icon">📦</i> Order
         </div>
-        <ul v-if="dropdowns.order" class="dropdown-menu">
+        <ul v-if="dropdowns.order" class="dropdown-menus">
           <li>Orders</li>
           <li>Order History</li>
         </ul>
@@ -44,7 +44,7 @@
         <div @click="toggleDropdown('photo')" class="dropdown-toggle">
           <i class="icon">📸</i> Photo
         </div>
-        <ul v-if="dropdowns.photo" class="dropdown-menu">
+        <ul v-if="dropdowns.photo" class="dropdown-menus">
           <li>Gallery</li>
           <li>Upload Photo</li>
         </ul>
@@ -53,7 +53,7 @@
         <div @click="toggleDropdown('video')" class="dropdown-toggle">
           <i class="icon">🎥</i> Video
         </div>
-        <ul v-if="dropdowns.video" class="dropdown-menu">
+        <ul v-if="dropdowns.video" class="dropdown-menus">
           <li>Video List</li>
           <li>Upload Video</li>
         </ul>

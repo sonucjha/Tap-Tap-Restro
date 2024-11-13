@@ -29,10 +29,15 @@
   
   .dropdown-toggle,.pointer {
     cursor: pointer;
+    padding-bottom: 20px!important;
   }
   
-  .dropdown-menu {
-    list-style: none;
-    padding-left: 20px;
-    margin: 5px 0;
+  .dropdown-menus {
+    list-style: none!important;
+    padding-left: 50px!important;
+    margin: 5px 0!important;
+  }
+
+  .dropdown-menus li{
+    padding-bottom: 10px!important;
   }
