@@ -29,7 +29,7 @@
   
   .dropdown-toggle,.pointer {
     cursor: pointer;
-    padding-bottom: 20px!important;
+    /* padding-bottom: 20px!important; */
   }
   
   .dropdown-menus {
@@ -39,5 +39,5 @@
   }
 
   .dropdown-menus li{
-    padding-bottom: 10px!important;
+    /* padding-bottom: 10px!important; */
   }

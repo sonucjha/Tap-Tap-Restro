@@ -1,5 +1,12 @@
 <template>
   <div class="sidebar">
+    <div class="mt-3 brand-backgound">
+        <h4 class="mb-1" style="color:white">TAP TAP RESTRO</h4>
+          <!-- Make My Dayy -->
+          <!-- make my bhojan / bhoj -->
+          <!-- cook uncle -->
+          <!-- 5star In House -->
+      </div>
     <ul class="menu">
       <li class="pointer"><i class="icon">🏠</i> Dashboard</li>
       <li>
