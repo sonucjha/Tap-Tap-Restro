@@ -1,13 +1,18 @@
 <template>
   <div class="sidebar">
     <div class="mt-3 brand-backgound">
-        <h4 class="mb-1" style="color:white">TAP TAP RESTRO</h4>
-          <!-- Make My Dayy -->
-          <!-- make my bhojan / bhoj -->
-          <!-- cook uncle -->
-          <!-- 5star In House -->
-      </div>
+      <h4 class="mb-1" style="color:white">TAP TAP RESTRO</h4>
+      <!-- Make My Dayy -->
+      <!-- make my bhojan / bhoj -->
+      <!-- cook uncle -->
+      <!-- 5star In House -->
+    </div>
     <ul class="menu">
+      <li>
+        <i class="bi bi-alarm" style="font-size: 2rem; color: red;"></i>
+        <p>Bootstrap Icons are working!</p>
+      </li>
+
       <li class="pointer"><i class="icon">🏠</i> Dashboard</li>
       <li>
         <div @click="toggleDropdown('staff')" class="dropdown-toggle">
@@ -87,4 +92,3 @@ const toggleDropdown = (menu) => {
 };
 
 </script>
- 

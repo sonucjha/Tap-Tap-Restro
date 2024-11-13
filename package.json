@@ -21,6 +21,7 @@
         "vue": "^3.2.37"
     },
     "dependencies": {
+        "bootstrap-icons": "^1.11.3",
         "pinia": "^2.2.6",
         "vue-router": "^4.4.5"
     }
