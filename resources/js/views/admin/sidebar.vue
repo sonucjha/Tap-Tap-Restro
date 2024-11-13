@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar" style="width: 280px;">
     <div class=" brand-backgound">
         <h4 class="mb-1" style="color:white">Tap-Tap-Restro</h4>
       </div>
