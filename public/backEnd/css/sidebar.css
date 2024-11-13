@@ -7,63 +7,74 @@
 } */
 
 .sidebar {
-    width: 250px;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    background: linear-gradient(to right, #6d0f4d, #4e4e4eba)!important;
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu > li {
-    margin: 10px 0;
-  }
-  
-  .icon {
-    margin-right: 10px;
-  }
-  
-  .dropdown-toggle,.pointer {
-    cursor: pointer;
-    /* padding-bottom: 20px!important; */
-  }
-  
-  .dropdown-menus {
-    list-style: none!important;
-    padding-left: 50px!important;
-    margin: 5px 0!important;
-  }
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  background: linear-gradient(to right, #6d0f4d, #4e4e4eba) !important;
+}
 
-  .dropdown-menus li{
-    /* padding-bottom: 10px!important; */
-  }
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .brand-backgound {
-    background-color: yellowgreen;
-    height: 110px !important;
-    margin-top: 0 !important;
-    background: linear-gradient(to right, #4e4e4e, #4e4e4eba);
-    /* background: linear-gradient(to right, #6d0f4d, #4e4e4eba)!important; */
-  
-    padding: 15px;
-    transform: skew(10deg, 10deg);
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 25px;
-    /* background: linear-gradient(to right, #452c3cc7, #4e4e4eba); */
-    background: linear-gradient(to right, #200516c7, #4e4e4eba);
-    color: white;
-    border-radius: 8px;
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-    /* background: linear-gradient(to right, #6d0f4d, #4e4e4eba); */
-  }
-  
+.menu>li {
+  margin: 10px 0;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.dropdown-toggle,
+.pointer {
+  cursor: pointer;
+  /* padding-bottom: 20px!important; */
+}
+
+.dropdown-menus {
+  list-style: none !important;
+  padding-left: 50px !important;
+  margin: 5px 0 !important;
+}
+
+.dropdown-menus li {
+  /* padding-bottom: 10px!important; */
+}
+
+.brand-backgound {
+  background-color: yellowgreen;
+  height: 110px !important;
+  margin-top: 0 !important;
+  background: linear-gradient(to right, #4e4e4e, #4e4e4eba);
+  /* background: linear-gradient(to right, #6d0f4d, #4e4e4eba)!important; */
+
+  padding: 15px;
+  transform: skew(10deg, 10deg);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  /* background: linear-gradient(to right, #452c3cc7, #4e4e4eba); */
+  background: linear-gradient(to right, #200516c7, #4e4e4eba);
+  color: white;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  /* Enables flexbox layout */
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: center;
+  /* Centers content vertically */
+  height: 100px;
+  /* Set a height for the container (adjust as needed) */
+  background-color: #333;
+  /* Optional: Add a background color */
+
+  /* background: linear-gradient(to right, #6d0f4d, #4e4e4eba); */
+}

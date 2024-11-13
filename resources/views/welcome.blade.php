@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="{{ asset('backEnd/css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('backEnd/css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('backEnd/css/dashboardCard.css') }}">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
